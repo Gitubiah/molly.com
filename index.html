@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Remixicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    
+    <!-- External css -->
+    <link rel="stylesheet" href="styles.css">
+
+        <title>Molly.com</title>
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="Molly.png">
+</head>
+<body>
+    <!-- header starts -->
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">MOLLY</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                 </li>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Shop <i class="ri-arrow-drop-down-line"></i></a>
+                        <div class="mega-dropdown">
+                          <div class="mega-dropdown__container">
+                            <div class="mega-dropdown__column">
+                              <h4>Mens Collection</h4>
+                              <ul>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Hats</a></li>
+                                <li><a href="#">Sweaters</a></li>
+                              </ul>
+                            </div>
+                            <div class="mega-dropdown__column">
+                              <h4>Womens Collection</h4>
+                              <ul>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Skirts</a></li>
+                              </ul>
+                            </div>
+                            <div class="mega-dropdown__column">
+                              <h4>Kids Collection</h4>
+                              <ul>
+                                <li><a href="#">Rompers</a></li>
+                                <li><a href="#">Beanies</a></li>
+                                <li><a href="#">Gloves</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                 <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact Us</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+              
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!-- SEARCH -->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Search..." class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+
+     <!--LOGIN -->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Log In</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="email" class="login__input" required>
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Password</label>
+                 <input type="password" placeholder="Please enter your password" id="password" class="login__input" required>
+              </div>
+           </div>
+
+           <div>
+              <p class="login__signup">
+                 Don't have an account?<a href="#">Sign up</a>
+              </p>
+  
+              <a href="#" class="login__forgot">
+                 Forgot Password?
+              </a>
+  
+              <button type="submit" class="login__button">Log In</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+     <!-- Header Ends -->
+
+     <!-- main with sections -->
+     <main>
+        <section>
+            <div class="favourite">
+                <img src="Image1.jpg" alt=" girl carrying shopping bags">
+                <div class="text">
+                    <h1>FAVOURITE BRANDS</h1>
+                    <a href="favourite.html">SHOP NOW</a>
+                </div>
+              </div>
+        </section>
+        <!-- horizontal rule -->
+        <div class="hr-container">
+            <hr class="custom-hr">
+        </div>
+        <!-- new arrivals image slider -->
+        <section class="product"> 
+         <div class="arr">
+            <h2 class="new">NEW ARRIVALS</h2>
+            </div>
+         <button class="pre-btn"><img src="arrow.png" alt=""></button>
+         <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+         <div class="product-container">
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Bikini4.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Bikini Set</h2>
+                     <p class="product-short-description">Blue bikini set</p>
+                     <span class="price">Ksh.1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Pink.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Beanie</h2>
+                     <p class="product-short-description">Pink Beanie</p>
+                     <span class="price">ksh.300</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Buckethat.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Bucket hat</h2>
+                     <p class="product-short-description">Maroon and green</p>
+                     <span class="price">ksh.1200</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Bikini3.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Bikini Set</h2>
+                     <p class="product-short-description">Orange bikini set</p>
+                     <span class="price">ksh.1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Bikini2.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Bikini Set</h2>
+                     <p class="product-short-description">Sky blue bikini set</p>
+                     <span class="price">ksh.1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="baby1.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Baby dress</h2>
+                     <p class="product-short-description">Yellow </p>
+                     <span class="price">ksh1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="mens1.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Crochet shirt</h2>
+                     <p class="product-short-description">Blue and White</p>
+                     <span class="price">ksh.1500</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Ruffles.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Ruffle skirt</h2>
+                     <p class="product-short-description">Crochet ruffle skirt</p>
+                     <span class="price">ksh.2500</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Set.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Crochet skirt set</h2>
+                     <p class="product-short-description">Maroon</p>
+                     <span class="price">ksh.3500</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">New</span>
+                     <img src="Col.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Gloves</h2>
+                     <p class="product-short-description">Comfy crochet gloves</p>
+                     <span class="price">ksh.250</span>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <br>
+            
+        <section>
+         <!-- best sellers starts -->
+            <div class="best-sellers">
+                <img src="download.jpg" alt="Shopping bags">
+                <div class="text1">
+                    <h1>BEST SELLERS</h1>
+                    <a href="best.html">SHOP NOW</a>
+                </div>
+              </div>
+              <!-- best sellers ends -->
+        </section>
+        <div class="hr-container">
+         <hr class="custom-hr">
+       </div>
+       <!-- reccomendations  -->
+       <section class="product"> 
+         <div class="recommendations">
+            <h2 class="rec">RECOMMENDATIONS FOR YOU</h2>
+            </div>
+         <button class="pre-btn"><img src="arrow.png" alt=""></button>
+         <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+         <div class="product-container">
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="Roses2.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Crochet Roses</h2>
+                     <p class="product-short-description">Roses</p>
+                     <span class="price">Ksh.1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="mens3.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Crochet shirt</h2>
+                     <p class="product-short-description">Black and White</p>
+                     <span class="price">ksh.1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="Miniskirt.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Crochet Miniskirt</h2>
+                     <p class="product-short-description">Miniskirt</p>
+                     <span class="price">ksh.800</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="baby2.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Baby Romper</h2>
+                     <p class="product-short-description">Skyblue baby romper</p>
+                     <span class="price">ksh.1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="B&W.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Bralette</h2>
+                     <p class="product-short-description">Black and White</p>
+                     <span class="price">ksh.700</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="baby1.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Baby dress</h2>
+                     <p class="product-short-description">Yellow </p>
+                     <span class="price">ksh1000</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="Beanies.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to Cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Beanies</h2>
+                     <p class="product-short-description">Customized</p>
+                     <span class="price">ksh.300</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="Ruffles.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Ruffle skirt</h2>
+                     <p class="product-short-description">Crochet ruffle skirt</p>
+                     <span class="price">ksh.2500</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="Hat.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Beanie</h2>
+                     <p class="product-short-description">Multicolored</p>
+                     <span class="price">ksh.3500</span>
+                 </div>
+             </div>
+             <div class="product-card">
+                 <div class="product-image">
+                     <span class="discount-tag">For You</span>
+                     <img src="Shrug.jpg" class="product-thumb" alt="">
+                     <button class="card-btn">Add to cart</button>
+                 </div>
+                 <div class="product-info">
+                     <h2 class="product-brand">Shrug</h2>
+                     <p class="product-short-description">Black and White</p>
+                     <span class="price">ksh.500</span>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+         <div class="hr-container">
+            <hr class="custom-hr">
+        </div>
+        <br>
+
+        <!-- our story -->
+        <section>
+         <div class="our-story">
+            <img src="Hero1.jpg" alt="creator" class="image" width="500px" height="150px">
+            <div class="story">
+              <h2>Our Story</h2>
+              <p>Established in the year 2024. Molly was created on the basis of making your crochet shopping experience convinient and fun. Check out our <a href="shop.html">shop</a> to find products that meet your needs.</p>
+              <a href="about.html" class="button">Read more</a>
+            </div>
+          </div>
+        </section>
+        <br>
+        <div class="hr-container">
+         <hr class="custom-hr">
+         <br>
+
+         <section class="bottom-imgs">
+            <img src="Roses1.jpg" alt="Image 2">
+            <img src="mens1.jpg" alt="Image 3">
+            <img src="Buckethat.jpg" alt="Image 3">
+         </section>
+
+
+     </main>
+
+     <!-- footer starts -->
+     <footer>
+      <div class="foot">
+        <div class="info">
+          <div class="info customer-service">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Subscription</a></li>
+            </ul>
+          </div>
+          <div class="info social-media">
+            <h3>Social Media</h3>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i> Molly</a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i> molly</a></li>
+              <li><a href="#"><i class="fa-brands fa-whatsapp"></i> 0723033416</a></li>
+            </ul>
+          </div>
+          <div class="info visit-store">
+            <h3>Visit Our Shop</h3>
+            <p>Ruiru-kimbo<br>Kiambu Kenya</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    
+    <!-- External js -->
+    <script src="script.js"></script>
+</body>
+</html>
